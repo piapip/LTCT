@@ -1,0 +1,18 @@
+package pot;
+
+public class BrewTea {
+	
+	public void menu() {
+		System.out.println("1. Fetch tea.\\n2. Pour spoon tea into the pot.\\n3. Add boilling water.\\n4. Wait.\\n5. Finish\\nChoose one(1-5): ");
+	}
+	
+	public static void main(String[] args) {
+		int option = 0;
+		do {
+			
+		}while(option > 0 && option < 5);
+	}
+	
+	TeaPot tea = new TeaPot();
+	
+}

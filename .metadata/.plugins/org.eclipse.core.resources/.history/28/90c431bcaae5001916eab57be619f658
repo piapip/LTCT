@@ -1,0 +1,11 @@
+package pot;
+
+public class TeaPot {
+	int size;
+	String teaType;
+	
+	public TeaPot() {
+		
+	}
+	
+}

@@ -1,0 +1,48 @@
+package pot;
+
+public class TeaPot {
+	private int size;
+	private String teaType;
+	private Boolean boilingWater;
+	private Boolean status;
+	
+	public TeaPot() {
+		this.size = 3;
+		this.teaType = "";
+		this.boilingWater = false;
+		this.status = false;
+	}
+	
+	public void fetchTea(int option) {
+		if(option == 1) this.teaType = "Green Tea";
+		else this.teaType = "Black Tea";
+		System.out.println("Fetching " + teaType);
+	}
+	
+	public void pourSpoonTeaIntoPot() {
+		if(this.size == 0) System.out.println("The pot is already filled with tea");
+		else {
+			while(this.size > 0) {
+				System.out.println("Putting a spoon of " + this.teaType + " tea into the pot.\n");
+				this.size = this.size - 1;	
+			}
+		}
+	}
+	
+	public void addBoilingWater() {
+		if(this.boilingWater == true) System.out.println("The pot is already filled with boiled water.");
+		else {
+			System.out.println("Adding boiling water.\n");
+			this.boilingWater = true;
+		}
+	}
+	
+	public void brewing() {
+		if(this.status == true) System.out.println("Tea is ready.");
+		else {
+			System.out.println("Brewing tea. Waiting...");
+			this.status = true;
+		}
+		
+	}
+}

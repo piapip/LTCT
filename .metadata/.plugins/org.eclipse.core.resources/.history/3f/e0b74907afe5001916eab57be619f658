@@ -1,0 +1,41 @@
+package pot;
+
+import java.util.Scanner;
+
+public class BrewTea {
+	
+	public static void menu() {
+		System.out.println("1. Fetch tea.\\n2. Pour spoon tea into the pot.\\n3. Add boilling water.\\n4. Wait.\\n5. Finish\\nChoose one(1-5): ");
+	}
+	
+	public static void main(String[] args) {
+		TeaPot tea = new TeaPot();
+		Scanner myObj = new Scanner(System.in);
+		int option = 0;
+		do {
+			menu();
+			option = myObj.nextInt();
+			switch(option) {
+			case 1:
+				System.out.println("1. Green tea\n2. Black tea\n");
+			    System.out.println("Choose type of tea (1 - 2 ): ");
+			    int teaOption = myObj.nextInt();
+			    tea.fetchTea(teaOption);
+				break;
+			case 2:
+				tea.pourSpoonTeaIntoPot();
+				break;
+			case 3:
+				tea.addBoilingWater();
+				break;
+			case 4:
+				tea.brewing();
+				break;
+			case 5:
+				break;
+			}
+		}while(option > 0 && option < 5);
+	}
+	
+	
+}

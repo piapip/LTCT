@@ -1,0 +1,22 @@
+package pot;
+
+public class TeaPot {
+	private int size;
+	private String teaType;
+	private Boolean boilingWater;
+	private Boolean status;
+	
+	public TeaPot() {
+		this.size = 3;
+		this.teaType = "";
+		this.boilingWater = false;
+		this.status = false;
+	}
+	
+	public void fetchGreenTea() {
+		this.teaType = "Green Tea";
+		
+	}
+	
+	
+}

@@ -1,0 +1,24 @@
+package pot;
+
+public class TeaPot {
+	private int size;
+	private String teaType;
+	private Boolean boilingWater;
+	private Boolean status;
+	
+	public TeaPot() {
+		this.size = 3;
+		this.teaType = "";
+		this.boilingWater = false;
+		this.status = false;
+	}
+	
+	public void fetchTea() {
+		System.out.println("1. Green tea\n2. Black tea\n");
+		System.out.println("Choose type of tea (1-2): ");
+		int option;
+		
+	}
+	
+	
+}

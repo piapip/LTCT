@@ -1,0 +1,6 @@
+package pot;
+
+public class BrewTea {
+	TeaPot tea = new TeaPot();
+	
+}
